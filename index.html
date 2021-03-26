@@ -13,16 +13,16 @@
         <div id="launchForm">
             <form>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Pilot Name <input type="text" name="pilotName" id="pilotName"/></label>
+                    <label><input placeholder="Pilot Name" type="text" name="pilotName" id="pilotName" pattern="^[a-zA-Z\s]*$" required/></label>
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Co-pilot Name <input type="text" name="copilotName"/></label>
+                    <label><input placeholder="Co-Pilot Name" type="text" name="copilotName" pattern="^[a-zA-Z\s]*$" required/></label>
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Fuel Level (L) <input type="text" name="fuelLevel"/></label> 
+                    <label><input placeholder="Fuel Level (L)" type="number" step="0.001" name="fuelLevel" required/></label> 
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
+                    <label><input placeholder="Cargo Mass (kg)" type="number" step="0.001" name="cargoMass" required/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
             </form>
